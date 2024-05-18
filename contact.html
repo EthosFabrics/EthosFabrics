@@ -28,13 +28,27 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Moderna
-  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-  * Updated: May 7 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- mail script -->
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function(){
+          emailjs.init("31YvNRWwy-Hs7TwBo"); 
+      })();
+      
+      function sendMail(event) {
+          event.preventDefault();
+
+          emailjs.sendForm('service_0vmc4b5', 'template_s9v8vor', event.target)
+              .then(function(response) {
+                  alert('Email sent successfully!');
+              }, function(error) {
+                  alert('Failed to send email. Please try again.');
+              });
+      }
+
+
+  </script>
 </head>
 
 <body>
@@ -45,8 +59,7 @@
 
       <div class="logo">
         <h1 class="text-light"><a href="index.html"><span>EthosFabrics</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        
       </div>
 
       <nav id="navbar" class="navbar">
@@ -136,8 +149,8 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
+            <form onsubmit="sendMail(event)">
+              <div class="row ">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
@@ -146,17 +159,17 @@
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="tel" class="form-control" name="tel" id="tel" placeholder="Phone Number" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="2" placeholder="Inquiry" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
+                <div class="loading"></div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message"></div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" class="btn btn-secondary">Send Message</button></div>
             </form>
           </div>
 
