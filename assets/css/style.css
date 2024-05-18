@@ -339,6 +339,9 @@ h6,
   display: block;
 }
 
+
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1562,7 +1565,7 @@ section {
   margin-bottom: 0;
 }
 
-.contact .php-email-form {
+.contact .emailform {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
   margin-bottom: 30px;
@@ -1581,7 +1584,7 @@ section {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .emailform .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1616,20 +1619,20 @@ section {
   font-size: 14px;
 }
 
-.contact .php-email-form input::focus,
+.contact .emailform input::focus,
 .contact .php-email-form textarea::focus {
   background-color: #68A4C4;
 }
 
-.contact .php-email-form input {
+.contact .emailform input {
   padding: 10px 15px;
 }
 
-.contact .php-email-form textarea {
+.contact .emailform textarea {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .emailform button[type=submit] {
   background: #68A4C4;
   border: 0;
   padding: 10px 24px;
@@ -1637,7 +1640,7 @@ section {
   transition: 0.4s;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .emailform button[type=submit]:hover {
   background: #8dbad2;
 }
 
