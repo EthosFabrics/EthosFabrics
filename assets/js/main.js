@@ -232,7 +232,7 @@
    * Init Clients swiper sliders
    */
   function initdesignsSwiper() {
-    document.querySelectorAll('.designsF-swiper').forEach(function(swiper) {
+    document.querySelectorAll('.designs-swiper').forEach(function(swiper) {
       let config = JSON.parse(swiper.querySelector('.swiper-config').innerHTML.trim());
       new Swiper(swiper, config);
     });
