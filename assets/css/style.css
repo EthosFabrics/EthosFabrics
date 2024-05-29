@@ -547,9 +547,41 @@ h6,
   }
 }
 
+
+/* -------------------------
+containers
+---------------------------- */
+.container1 {
+  padding-left: 20px;
+  padding-top: 20px;
+  background: rgb(224, 239, 243);
+  box-shadow: 0 5px 25px 0 rgba(10, 10, 10, 0.6);
+
+}
+
+.container2 {
+  
+  background: rgb(224, 239, 243);
+  box-shadow: 0 5px 25px 0 rgba(10, 10, 10, 0.6);
+
+}
+
+.container3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background:rgb(224, 239, 243) ;
+  box-shadow: 0 5px 25px 0 rgba(10, 10, 10, 0.6);
+
+}
+
+
+
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+
 section {
   padding: 60px 0;
   
@@ -2089,31 +2121,6 @@ section {
 }
 
 
-
-
-.container1 {
-  padding-left: 20px;
-  padding-top: 20px;
-  background: rgb(224, 239, 243);
-  box-shadow: 0 5px 25px 0 rgba(10, 10, 10, 0.6);
-
-}
-
-.container2 {
-  
-  background: rgb(224, 239, 243);
-  box-shadow: 0 5px 25px 0 rgba(10, 10, 10, 0.6);
-
-}
-
-.container3 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background:rgb(224, 239, 243) ;
-  box-shadow: 0 5px 25px 0 rgba(10, 10, 10, 0.6);
-
-}
-
 .emailformhome {
 
   
@@ -2154,7 +2161,4 @@ section {
 .form-container {
   position: relative;
 }
-
-
-
 
