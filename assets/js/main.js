@@ -1,10 +1,4 @@
-/**
-* Template Name: Moderna
-* Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-* Updated: May 7 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 (function() {
   "use strict";
@@ -237,12 +231,12 @@
   /**
    * Init Clients swiper sliders
    */
-  function initClientsSwiper() {
-    document.querySelectorAll('.clients-swiper').forEach(function(swiper) {
+  function initdesignsSwiper() {
+    document.querySelectorAll('.designsF-swiper').forEach(function(swiper) {
       let config = JSON.parse(swiper.querySelector('.swiper-config').innerHTML.trim());
       new Swiper(swiper, config);
     });
   }
-  window.addEventListener('load', initClientsSwiper);
+  window.addEventListener('load', initdesignsSwiper);
 
 })()
