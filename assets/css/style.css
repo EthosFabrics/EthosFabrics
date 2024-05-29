@@ -633,28 +633,31 @@ section {
 /* marquee */
 
 
-.marquee {
-  
 
-  animation: marquee 12s linear infinite;
-  font-weight: bold;
+
+    .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap; /* Prevent line breaks */
+        }
+
+        .marquee {
+            display: inline-block;
+            animation: marquee 12s linear infinite;
+            font-weight: bold;
             background: linear-gradient(to right, #278baa, #040608);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            
-            
-}
+        }
 
-@keyframes marquee {
-  0% {
-      transform: translateX(100%);
-  }
-  100% {
-      transform: translateX(-100%);
-  }
-}
-
-
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
 
 
 /*--------------------------------------------------------------
